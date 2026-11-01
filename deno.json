@@ -1,0 +1,17 @@
+{
+  "tasks": {
+    "dev": "deno run -A --unstable-kv --unstable-cron main.ts",
+    "test": "deno test -A --unstable-kv test.ts",
+    "check": "deno check main.ts test.ts"
+  },
+  "unstable": [
+    "kv",
+    "cron"
+  ],
+  "fmt": {
+    "lineWidth": 140
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1.0.19"
+  }
+}
